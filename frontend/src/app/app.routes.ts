@@ -13,15 +13,15 @@ export const routes: Routes = [
     component: Home
   },
   {
-    path: '**',
-    redirectTo: 'inicio'
-  },
-  {
     path: 'monitorias/nova',
     component: MonitoriaForm
   },
   {
     path: 'monitorias/editar/:id',
     component: MonitoriaForm
+  },
+  {
+    path: '**',
+    redirectTo: 'inicio'
   },
 ];
