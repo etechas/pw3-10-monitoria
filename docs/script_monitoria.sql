@@ -4,7 +4,7 @@ Use DadosMonitoria
 
 Create table VagaMonitoria 
 (
-id bigint primary key,
+id bigint IDENTITY(1,1) primary key,
 disciplina varchar(50),
 nomeMonitor varchar (100),
 vagasTotais int,
