@@ -1,10 +1,11 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { MonitoriaService } from '../../core/services/monitoria-service';
 import { VagaMonitoria } from '../../core/model/vaga-monitoria';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

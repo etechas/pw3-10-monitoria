@@ -1,6 +1,8 @@
 <main>
   <h1>Monitoria entre colegas</h1>
 
+  <a routerLink="/monitorias/nova">Nova monitoria</a>
+
   <button
     type="button"
     (click)="carregar()"
@@ -36,6 +38,8 @@
         </td>
         <td>{{ monitoria.aberta ? 'Aberta' : 'Encerrada' }}</td>
         <td>
+          <a [routerLink]="['/monitorias/editar', monitoria.id]">Editar</a>
+
           <button
             type="button"
             (click)="inscrever(monitoria.id)"
