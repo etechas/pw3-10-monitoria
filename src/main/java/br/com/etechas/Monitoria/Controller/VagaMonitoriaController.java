@@ -10,6 +10,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/monitorias")
 public class VagaMonitoriaController {
     private final VagaMonitoriaService service;
